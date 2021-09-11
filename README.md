@@ -38,7 +38,7 @@ rails c
 
 Copy/paste the corresponding commands for each question in the console to display the answer.
 
-### Easy level
+### 😊  Easy level
 
 - What is the total number of Album objects contained in the database ?
 
@@ -63,7 +63,7 @@ Copy/paste the corresponding commands for each question in the console to displa
   Album.find_by(title: "Use Your Illusion II").artist
   ```
 
-### Medium level
+### 🤨  Medium level
 
 - How many albums have "Great" in their title?
 
@@ -88,7 +88,7 @@ Copy/paste the corresponding commands for each question in the console to displa
   Track.where(duration: 158589).count
   ```
 
-### Difficult level
+### 😵‍💫  Difficult level
 
 - puts in console all the titles of AC/DC.
 
