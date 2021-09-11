@@ -36,7 +36,7 @@ rails c
 
 ## Questions
 
-Copy/paste the corresponding commands for each question to display the result in the console.
+Copy/paste the corresponding commands for each question in the console to display the answer.
 
 ### Easy level
 
