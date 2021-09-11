@@ -32,60 +32,62 @@
 - Combien y a t'il d'albums dont le titre contient "Great" ? (indice)
 
   ```ruby
-  Album.where("title like ?", "%great%").count
+  $ Album.where("title like ?", "%great%").count
   ```
 
 - Supprime tous les albums dont le nom contient "music".
 
   ```ruby
-  Album.where("title like ?", "%music%").destroy_all
+  $ Album.where("title like ?", "%music%").destroy_all
   ```
 
 - Combien y a t'il d'albums écrits par AC/DC ?
 
   ```ruby
-  Album.where(artist: "AC/DC").count
+  $ Album.where(artist: "AC/DC").count
   ```
 
 - Combien de chanson durent exactement 158589 millisecondes ?
   ```ruby
-  Track.where(duration: 158589).count
+  $ Track.where(duration: 158589).count
   ```
 
 ### Niveau Difficile
 
-- Pour ces questions, tu vas devoir effectuer des boucles dans la console Rails. C'est peu commun mais c'est faisable, tout comme dans IRB.
-
-  ```ruby
-
-  ```
-
 - puts en console tous les titres de AC/DC.
 
   ```ruby
-
+  $ Track.where(artist: "AC/DC").each do |track|
+    puts track.title
+  end
   ```
 
 - puts en console tous les titres de l'album "Let There Be Rock".
 
   ```ruby
-
+  $ Track.where(album: "Let There Be Rock").each do |track|
+    puts track.title
+  end
   ```
 
 - Calcule le prix total de cet album ainsi que sa durée totale.
 
   ```ruby
-
+  $ price = Track.where(album: "Let There Be Rock").sum(:price).round(2)
+  duration = Track.where(album: "Let There Be Rock").sum(:duration)
+  puts "#{price}, #{duration}"
   ```
 
 - Calcule le coût de l'intégralité de la discographie de "Deep Purple".
 
   ```ruby
-
+  $ Track.where(artist: "Deep Purple").sum(:price).round(2)
   ```
 
 - Modifie (via une boucle) tous les titres de "Eric Clapton" afin qu'ils soient affichés avec "Britney Spears" en artist.
 
   ```ruby
-
+  $ Track.where(artist: "Eric Clapton").each do |track|
+    track.update(artist: 'Britney Spears')
+  end
   ```
