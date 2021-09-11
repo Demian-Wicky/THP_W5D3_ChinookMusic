@@ -1,4 +1,4 @@
-# The Gossip Project - Chinook Music db (100% finished)
+# Chinook Music db (100% finished)
 
 A Ruby on rails project containing a music database (an Album model and a Track model)
 The data comes from `db>seeds.rb`
