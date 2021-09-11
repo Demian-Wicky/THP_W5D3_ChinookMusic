@@ -2,39 +2,67 @@
 
 ## Questions
 
-* Niveau facile
+### Niveau facile
 
 - Quel est le nombre total d'objets Album contenus dans la base (sans regarder les id bien sûr) ?
-<code>$ </code>
+    ```sh
+  $ Album.count
+  ```
 - Qui est l'auteur de la chanson "White Room" ?
-<code>$ </code>
+    ```sh
+  
+  ```
 - Quelle chanson dure exactement 188133 milliseconds ?
-<code>$ </code>
+    ```sh
+  
+  ```
 - Quel groupe a sorti l'album "Use Your Illusion II" ?
-<code>$ </code>
+    ```sh
+  
+  ```
 
-* Niveau Moyen
+### Niveau Moyen
 
 - Combien y a t'il d'albums dont le titre contient "Great" ? (indice)
-<code>$ </code>
+  ```sh
+  
+  ```
 - Supprime tous les albums dont le nom contient "music".
-<code>$ </code>
+    ```sh
+  
+  ```
 - Combien y a t'il d'albums écrits par AC/DC ?
-<code>$ </code>
+    ```sh
+  
+  ```
 - Combien de chanson durent exactement 158589 millisecondes ?
-<code>$ </code>
+    ```sh
+  
+  ```
 
-* Niveau Difficile
+### Niveau Difficile
 
 - Pour ces questions, tu vas devoir effectuer des boucles dans la console Rails. C'est peu commun mais c'est faisable, tout comme dans IRB.
-<code>$ </code>
+    ```sh
+  
+  ```
 - puts en console tous les titres de AC/DC.
-<code>$ </code>
+    ```sh
+  
+  ```
 - puts en console tous les titres de l'album "Let There Be Rock".
-<code>$ </code>
+    ```sh
+  
+  ```
 - Calcule le prix total de cet album ainsi que sa durée totale.
-<code>$ </code>
+    ```sh
+  
+  ```
 - Calcule le coût de l'intégralité de la discographie de "Deep Purple".
-<code>$ </code>
+    ```sh
+  
+  ```
 - Modifie (via une boucle) tous les titres de "Eric Clapton" afin qu'ils soient affichés avec "Britney Spears" en artist.
-<code>$ </code>
+    ```sh
+  
+  ```
