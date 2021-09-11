@@ -8,6 +8,7 @@ The data comes from `db>seeds.rb`
 - [General info](#general-info)
 - [Technologies](#technologies)
 - [Setup](#setup)
+- [Questions](#questions)
 
 ## General info
 
@@ -24,20 +25,20 @@ Project is created with
 First, go to the RoR project folder and type:
 
 ```
-  bundle install
+bundle install
 ```
 
 then
 
 ```
-  rails c
+rails c
 ```
 
 ## Questions
 
 Copy/paste the corresponding commands for each question to display the result in the console.
 
-### Niveau facile
+### Easy level
 
 - What is the total number of Album objects contained in the database ?
 
@@ -62,7 +63,7 @@ Copy/paste the corresponding commands for each question to display the result in
   Album.find_by(title: "Use Your Illusion II").artist
   ```
 
-### Niveau Moyen
+### Medium level
 
 - How many albums have "Great" in their title?
 
@@ -87,7 +88,7 @@ Copy/paste the corresponding commands for each question to display the result in
   Track.where(duration: 158589).count
   ```
 
-### Niveau Difficile
+### Difficult level
 
 - puts in console all the titles of AC/DC.
 
@@ -119,7 +120,7 @@ Copy/paste the corresponding commands for each question to display the result in
   Track.where(artist: "Deep Purple").sum(:price).round(2)
   ```
 
-- Modifies (via a loop) all the titles of "Eric Clapton" so that they are displayed with "Britney Spears" in artist.
+- Modify (via a loop) all the titles of "Eric Clapton" so that they are displayed with "Britney Spears" in artist.
 
   ```ruby
   Track.where(artist: "Eric Clapton").each do |track|
